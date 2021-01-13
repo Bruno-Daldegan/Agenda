@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Agenda"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Agenda de Contatos" Height="600" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label Content="Id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" Height="23" Margin="10,86,10,0" TextWrapping="Wrap" VerticalAlignment="Top" AutomationProperties.IsRequiredForForm="True"/>
+
+        <Label Content="Email" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" Height="23" Margin="10,140,10,0" TextWrapping="Wrap" VerticalAlignment="Top" AutomationProperties.IsRequiredForForm="True"/>
+
+        <Label Content="Telefone" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelefone" Height="23" Margin="10,188,10,0" TextWrapping="Wrap" VerticalAlignment="Top" AutomationProperties.IsRequiredForForm="True"/>
+
+        <DataGrid x:Name="dgDados" Margin="10,307,10,10" MouseDoubleClick="dgDados_MouseDoubleClick" IsReadOnly="True" SelectionMode="Single"/>
+
+        <Button Content="Inserir" Name="btnInserir" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Width="75" Click="btnInserirAlterar_Click"/>
+        <Button Content="Alterar" Name="btnAlterar" HorizontalAlignment="Left" Margin="90,225,0,0" VerticalAlignment="Top" Width="75" Click="btnInserirAlterar_Click"/>
+        <Button Content="Localizar" Name="btnLocalizar" HorizontalAlignment="Left" Margin="250,225,0,0" VerticalAlignment="Top" Width="75" Click="btnLocalizar_Click"/>
+        <Button Content="Excluir" Name="btnExcluir" HorizontalAlignment="Left" Margin="170,225,0,0" VerticalAlignment="Top" Width="75" Click="btnExcluir_Click"/>
+        <Button Content="Salvar" Name="btnSalvar" HorizontalAlignment="Left" Margin="330,225,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
+        <Button Content="Cancelar" Name="btnCancelar" HorizontalAlignment="Left" Margin="410,225,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelar_Click"/>
+        <Label x:Name="lblTituloContatos" Content="Total de contatos:" HorizontalAlignment="Left" Margin="10,276,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.684,0.038"/>
+        <Label x:Name="lblCountContatos" Content="0" HorizontalAlignment="Left" Margin="118,276,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.684,0.038"/>
     </Grid>
 </Window>
