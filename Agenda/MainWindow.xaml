@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Agenda de Contatos" Height="600" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <Label Content="Id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <!--<Label Content="Id" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>-->
 
         <Label Content="Nome" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNome" Height="23" Margin="10,86,10,0" TextWrapping="Wrap" VerticalAlignment="Top" AutomationProperties.IsRequiredForForm="True"/>
